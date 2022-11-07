@@ -102,6 +102,35 @@
                     <span class="instructions"><span class="errMessage"></span></span>
             </div>
             <div>
+                <label for="regcode">One-time-code</label>
+                <input
+                  id="regcode"
+                  autocomplete="off"
+                  type="text"
+                  enterkeyhint="next"
+                  required
+                  minlength="8"
+                  maxlength="8"
+                  title="Enter your one time code here"
+                />
+                <span class="instructions"><span class="errMessage"></span></span>
+            </div>
+            <div>
+                <label for="pets">Number of Pets</label>
+                <input
+                  type="number"
+                  inputmode="numeric"
+                  id="pets"
+                  name="pets"
+                  enterkeyhint="next"
+                  autocomplete="off"
+                  min="0"
+                  max="50"
+                  step="2"
+                /><!-- input type=number adds the stepper -->
+                <span class="instructions"><span class="errMessage"></span></span>
+            </div>
+            <div>
                 <button id="btnSend">Send</button> 
             </div>
          </form>
